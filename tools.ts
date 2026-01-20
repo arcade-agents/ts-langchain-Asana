@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['Asana_AttachFileToTask', 'Asana_CreateTask', 'Asana_MarkTaskAsCompleted', 'Asana_UpdateTask'];
+const TOOLS_WITH_APPROVAL = ['Asana_AttachFileToTask', 'Asana_CreateTag', 'Asana_CreateTask', 'Asana_MarkTaskAsCompleted', 'Asana_UpdateTask'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
